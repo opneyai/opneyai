@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'FiveYearsOldFont';
+    src: url('5yearsoldfont.ttf') format('truetype');
+}
+
+html {
+    font-family: 'FiveYearsOldFont', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #111410;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: 2px 2px #000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px 0;
+
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.logo {
+    max-width: 150px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+    color: #fff;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.big-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 2px solid #000;
+    box-shadow: 3px 3px #000;
+}
+
+footer {
+    padding: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.shocked-wojak {
+    position: fixed;
+    left: 10px; /* Ou tout autre valeur pour positionner l'image à gauche */
+    top: 40%;
+    transform: translateY(-50%);
+    width: 700px; /* Ajustez cette valeur selon la taille désirée de l'image */
+    height: auto;
+    animation: swing-animation 1s infinite ease-in-out;
+}
+
+@keyframes swing-animation {
+    0%, 100% {
+        transform: translateY(-50%) rotate(-5deg);
+    }
+    50% {
+        transform: translateY(-50%) rotate(5deg);
+    }
+}
