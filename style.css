@@ -113,6 +113,12 @@ footer {
     animation: swing-animation 1s infinite ease-in-out;
 }
 
+@media (max-width: 768px) {
+    .shocked-wojak {
+        width: 150px;
+    }
+}
+
 @keyframes swing-animation {
     0%, 100% {
         transform: translateY(-50%) rotate(-5deg);
