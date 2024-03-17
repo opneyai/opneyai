@@ -105,17 +105,17 @@ footer {
 
 .shocked-wojak {
     position: fixed;
-    left: 10px; /* Ou tout autre valeur pour positionner l'image à gauche */
+    left: 10px; 
     top: 40%;
     transform: translateY(-50%);
-    width: 700px; /* Ajustez cette valeur selon la taille désirée de l'image */
+    max-width: 30vw;
     height: auto;
     animation: swing-animation 1s infinite ease-in-out;
 }
 
 @media (max-width: 768px) {
     .shocked-wojak {
-        width: 150px;
+        max-width: 20vw;
     }
 }
 
